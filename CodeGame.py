@@ -2,13 +2,10 @@ import random
 
 
 class CodeGame:
-    def __init__(self, guesser_red, guesser_blue, hinter_red, hinter_blue):
+    def __init__(self):
         self.board = Board()
         self.template = Template()
-        self.guesser_red = guesser_red
-        self.guesser_blue = guesser_blue
-        self.hinter_red = hinter_red
-        self.hinter_blue = hinter_blue
+        self.players = []
         self.red_turn = True
         self.red_remaining = self.template.NUM_RED_SPIES
         self.blue_remaining = self.template.NUM_BLUE_SPIES

@@ -2,7 +2,7 @@ from CodeGame import CodeGame
 
 
 def main():
-    game = CodeGame("a", "b", "c", "d")
+    game = CodeGame()
     game.template.print_board()
     print("\n\nStarting Game:")
     game.start_game()
